@@ -42,4 +42,3 @@ jobs:
     - name: Print current time
       run: echo "Current Time=${{steps.current-time.outputs.formattedTime}}"
       shell: bash
-      
