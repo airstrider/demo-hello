@@ -16,6 +16,7 @@ on:
 
 jobs:
   build:
+  
     runs-on: ubuntu-latest
 
     steps:
@@ -31,14 +32,3 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-
-    - name: Get current time
-      uses: 1466587594/get-current-time@v2
-      id: current-time
-      with:
-        format: YYYY-MM-DDTHH:mm:ss
-        utcOffset: "-05:00"
-
-    - name: Print current time
-      run: echo "Current Time=${{steps.current-time.outputs.formattedTime}}"
-      shell: bash
