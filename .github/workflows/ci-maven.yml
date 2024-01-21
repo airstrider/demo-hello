@@ -44,8 +44,8 @@ jobs:
     - name: 4. Docker build & push to hub
       run: | 
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker build -t demo-hello . 
-          docker push demo-hello:latest
+          docker build -t airstrider/demo-hello . 
+          docker push airstrider/demo-hello
 
     # access server & pull and run the docker image
     - name: 5. Execute remote ssh commands using password
