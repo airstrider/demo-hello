@@ -49,7 +49,7 @@ jobs:
 
     # access server & pull and run the docker image
     - name: Execute remote ssh commands using password
-      uses: appleboy/ssh-action@v1.0.6
+      uses: appleboy/ssh-action@v1.0.3
       with:
         host: 10.0.0.202
         username: ryan
