@@ -53,7 +53,7 @@ jobs:
       with:
         host: 10.0.0.202
         username: ryan
-        key: connor
+        password: connor
         port: 22
         script: |
           docker stop demo-hello
