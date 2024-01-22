@@ -57,7 +57,7 @@ jobs:
         port: 22
         script: |
           docker pull airstrider/demo-hello
-          docker stop demo-hello
-          docker rm demo-hello
-          docker run -p 8080:8080 airstrider/demo-hello
-          docker rmi demo-hello
+          # docker stop demo-hello
+          # docker rm demo-hello
+          # docker run -p 8080:8080 airstrider/demo-hello
+          # docker rmi demo-hello
