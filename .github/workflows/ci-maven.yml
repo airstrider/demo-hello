@@ -60,4 +60,4 @@ jobs:
           docker rm demo-hello
           docker image rm demo-hello
           docker pull airstrider/demo-hello
-          docker run -it -p 8080:8080 demo-hello 
+          docker run -p 8080:8080 demo-hello 
