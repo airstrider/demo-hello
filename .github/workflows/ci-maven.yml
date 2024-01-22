@@ -56,8 +56,8 @@ jobs:
         password: connor
         port: 22
         script: |
-          sudo docker stop demo-hello
-          sudo docker rm demo-hello
-          sudo docker image rm airstrider/demo-hello
+          # sudo docker stop demo-hello
+          # sudo docker rm demo-hello
+          # sudo docker image rm airstrider/demo-hello
           sudo docker pull airstrider/demo-hello
-          sudo docker run -p 8080:8080 airstrider/demo-hello 
+          # sudo docker run -p 8080:8080 airstrider/demo-hello 
