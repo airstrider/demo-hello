@@ -58,6 +58,6 @@ jobs:
         script: |
           sudo docker stop demo-hello
           sudo docker rm demo-hello
-          sudo docker image rm demo-hello
+          sudo docker image rm airstrider/demo-hello
           sudo docker pull airstrider/demo-hello
-          sudo docker run -p 8080:8080 demo-hello 
+          sudo docker run -p 8080:8080 airstrider/demo-hello 
